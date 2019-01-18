@@ -8,6 +8,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 # done: 1.
 #   On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
+import rosegraphics as rg
 
 ########################################################################
 # TODO: 2.
@@ -28,5 +29,18 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 #
 ########################################################################
-steve = rg.SimpleTurtle(circle)
-steve.pen = rg.()
+steve = rg.SimpleTurtle('square')
+steve.pen = rg.Pen('Pink',15)
+steve.speed = 20
+for k in range (150):
+    steve.left(80)
+    steve.forward(k)
+    steve.speed = 20*k
+
+mike = rg.SimpleTurtle('triangle')
+mike.pen = rg.Pen('Dark Blue',10)
+mike.speed = 40
+mike.go_to(rg.Point(10,0))
+for k in range (150) :
+    mike.right(80)
+    mike.backward(k)
