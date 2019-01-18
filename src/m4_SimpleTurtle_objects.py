@@ -157,7 +157,7 @@ natasha.go_to(rg.Point(-300,-100))
 #
 ###############################################################################
 steph = rg.SimpleTurtle('triangle')
-steph.pen=rg.Pen('Blue',15)
+steph.pen = rg.Pen('Blue',15)
 steph.go_to(rg.Point(200,200))
 steph.left(20)
 steph.go_to(rg.Point(0,100))
